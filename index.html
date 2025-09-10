@@ -14,13 +14,24 @@
       margin: 4px 2px;
       border-radius: 6px;
     }
-    .button1 { background-color: #e52165; } /* Green */
-    .button2 { background-color: #0d1137; } /* Blue */
+    .button1 { background-color: #e52165; } /* Green (pinkish-red here) */
+    .button2 { background-color: #0d1137; } /* Blue (dark navy) */
+
+    /* Container to align buttons */
+    .button-container {
+      display: flex;
+      justify-content: flex-end; /* move buttons to the right */
+      gap: 8px; /* spacing between buttons */
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
-  <button class="button button1">Green</button>
-  <button class="button button2">Blue</button>
+  <!-- Button container -->
+  <div class="button-container">
+    <button class="button button1">Green</button>
+    <button class="button button2">Blue</button>
+  </div>
 
   <h1>Welcome to My Page</h1>
   <h2>About Me</h2>
@@ -45,4 +56,3 @@
   <p>Bear</p>
 </body>
 </html>
-
